@@ -15,7 +15,7 @@ export default function Home({ darkMode, setDarkMode }) {
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
       {/* Main Section =>make vertical using flex */}
       {/* Middle Section */}
-      <div className='pt-24 grid grid-cols-3 m-auto  border-2 border-green-400 flex  max-w-screen-xl'>
+      <div className='pt-24 grid grid-cols-3 m-auto  border-2 border-green-400 max-w-screen-xl'>
         <HomeMainSection/>
         <HomeSideSection/>
       </div>

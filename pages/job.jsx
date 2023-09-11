@@ -1,9 +1,8 @@
 import Head from 'next/head'
-import About from '../components/About'
-import Main from '../components/Main'
 import Navbar from '@/components/NavBar'
 import Footers from '@/components/Footers'
-import JobDescription from '@/components/JobMainSideSection'
+import JobMainSideSection from '@/components/JobMainSideSection'
+import HomeSideSection from '@/components/HomeSideSection'
 
 
 function job({ darkMode, setDarkMode }) {
@@ -11,7 +10,10 @@ function job({ darkMode, setDarkMode }) {
     <>
       <Head> </Head>
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
-      <JobDescription/>
+      <div className='pt-24 grid grid-cols-3 m-auto  border-2 border-green-400 max-w-screen-xl'>
+        <JobMainSideSection/>
+        <HomeSideSection/>
+      </div>
       <Footers />
     </>
   )

@@ -6,7 +6,7 @@ import Footers from './Footers';
 
 const CardListItem = ({cardData}) => {
  
-    console.log(cardData)
+    // console.log(cardData)
 
 
 
@@ -16,7 +16,7 @@ const CardListItem = ({cardData}) => {
                 <div className='col-span-2'>
 
                     <div className="container mx-auto">
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 px-6">
 
                         {/* { cardData.map((data,idx)=>{
                                 <img src={data.image} alt={"ddd"} className="w-full h-48 object-cover" />   

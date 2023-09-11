@@ -57,38 +57,33 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             //         : `fixed w-full h-20 z-[100] bg-[${navBg}] dark:bg-gray-900`
             // }
         >
-            <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16 '>
+            <div className='flex justify-between items-center w-full h-full px-40'>
                 <Link href='/'>
                     {
                         logo ? <Image
                             src={NavLogo}
                             alt='/'
-                            width='80'
-                            height='30'
-                            className='cursor-pointer mix-blend-color-burn dark:mix-blend-plus'
+                            width='65'
+                            height='25'
+                            className='cursor-pointer mix-blend-darken dark:mix-blend-plus'
                         /> : ""
                     }
                 </Link>
                 <div>
                     <ul className={`hidden md:flex items-center ${linkColor} dark:text-white`}>
-                        <li onClick={()=>handleDarkMode()} className='ml-10 '>
+                        {/* <li onClick={()=>handleDarkMode()} className='ml-10 '>
                             {darkMode ? <BsToggleOn size={28} /> : <BsToggleOff size={28} />}
+                        </li> */}
+                        <li className='ml-10 text-sm uppercase hover:border-b'>
+                            <Link href='/'>Work From Home</Link>
                         </li>
                         <li className='ml-10 text-sm uppercase hover:border-b'>
-                            <Link href='/'>Home</Link>
+                            <Link href='/#about'>Internship</Link>
                         </li>
                         <li className='ml-10 text-sm uppercase hover:border-b'>
-                            <Link href='/#about'>About</Link>
+                            <Link href='/#skills'>Placement Material</Link>
                         </li>
-                        <li className='ml-10 text-sm uppercase hover:border-b'>
-                            <Link href='/#skills'>Skills</Link>
-                        </li>
-                        <li className='ml-10 text-sm uppercase hover:border-b'>
-                            <Link href='/#projects'>Projects</Link>
-                        </li>
-                        <li className='ml-10 text-sm uppercase hover:border-b'>
-                            <Link href='/#contact'>Contact</Link>
-                        </li>
+
                     </ul>
                     {/* Hamburger Icon */}
                     <div
