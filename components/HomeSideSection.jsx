@@ -12,9 +12,9 @@ function HomeSideSection() {
   return (
     //1. Site Desc
     //2. Recent Jon List
-    <div className='col-span-1 border-2 border-red-600 h-screen w-full '>
-      {/* <SiteDescSetion/>
-      <RecentJobsSection image={obj.image} date={obj.date} title={obj.title} desc={obj.desc} /> */}
+    <div className='col-span-1 border-2 border-red-600 h-auto w-full '>
+      <SiteDescSetion/>
+      <RecentJobsSection image={obj.image} date={obj.date} title={obj.title} desc={obj.desc} />
     </div>
   )
 }

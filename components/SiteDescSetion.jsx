@@ -9,7 +9,7 @@ import Link from 'next/link';
 function SiteDescSetion() {
   return (
     <div>
-         <div className='flex flex-col items-center mb-8'>
+         <div className='flex border-2 border-zinc-300 flex-col items-center mb-8'>
                 <Image className='object-fit rounded-xl' src={SiteImg} width={150} height={150} alt='aa' />
                 <h2 className='mt-2'>JobSeekr</h2>
                 <hr className='h-px my-4 bg-gray-200 border-0' />

@@ -50,7 +50,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
     // }, []);
 
     return (
-        <div className={`fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-300 bg-[${navBg}] dark:bg-gray-900`}
+        <div className={`fixed w-full h-16 shadow-xl z-[100] ease-in-out duration-300 bg-[${navBg}] dark:bg-gray-900`}
             // className={
             //     shadow
             //         ? `fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-300 bg-[${navBg}] dark:bg-gray-900`
