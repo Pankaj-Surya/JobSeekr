@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 // import AboutImg from '../public/assets/download.png'
@@ -6,17 +6,31 @@ import ListItem from './CardListItem';
 import BannerSection from './BannerSection';
 import RecentJobsSection from './RecentJobsSection';
 import AboutUsSection from './AboutUsSection';
+import axios from 'axios';
 
 
 //components\JobMainSideSection.jsx
-const JobMainSideSection = () => {
+const JobMainSideSection = ({obj}) => {
 
-    const obj = {
-        image: "https://images.pexels.com/photos/443383/pexels-photo-443383.jpeg",
-        date: "September 4, 2023",
-        title: "GlobalLogic Off Campus Hiring: Associate Analyst Roles",
-        desc: "GlobalLogic is a renowned multinational company specializing in software product engineering, digital transformation, and consulting services. Founded in.."
-    }
+    // const [singleJob,setSingleJob] = useState({});
+    
+
+  
+    // useEffect(() => {
+    //   const fetchSingleJob =async ()=>{
+    //      const res =await axios.get(`http://localhost:8000/api/jobs/find/6505a62ea7019d615d81a671`)
+    //      console.log("my records : ",res.data);
+    //      setSingleJob(res.data);
+    //     }
+    //     fetchSingleJob()
+    // },[data?._id])
+
+    // const obj = {
+    //     image: "https://images.pexels.com/photos/443383/pexels-photo-443383.jpeg",
+    //     date: "September 4, 2023",
+    //     title: "GlobalLogic Off Campus Hiring: Associate Analyst Roles",
+    //     desc: "GlobalLogic is a renowned multinational company specializing in software product engineering, digital transformation, and consulting services. Founded in.."
+    // }
     return (
         <div className='col-span-2  border-2 border-black h-46 w-full'>
             {/* <div id='job-description' className='w-full md:h-max p-2 flex items-center pt-14 pb-4 dark:bg-gray-800'> */}
