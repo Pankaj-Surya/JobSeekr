@@ -8,14 +8,17 @@ function HomeSideSection() {
     date: "September 4, 2023",
     title: "GlobalLogic Off Campus Hiring: Associate Analyst Roles",
     desc: "GlobalLogic is a renowned multinational company specializing in software product engineering, digital transformation, and consulting services. Founded in.."
-}
+  }
   return (
-    //1. Site Desc
-    //2. Recent Jon List
-    <div className='col-span-1 border-2 border-red-600 h-auto w-full '>
-      <SiteDescSetion/>
+
+    <div className='col-span-1 h-auto w-full'>
+      {/* 1. Site Desc */}
+      <SiteDescSetion />
+
+      {/* 2. Recent Jon List */}
       <RecentJobsSection image={obj.image} date={obj.date} title={obj.title} desc={obj.desc} />
     </div>
+
   )
 }
 

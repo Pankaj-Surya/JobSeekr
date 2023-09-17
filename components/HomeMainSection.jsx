@@ -5,7 +5,7 @@ import axios from 'axios'
 
 function HomeMainSection() {
   const [jobs, setJobs] = useState([])
-  
+
   const obj = {
     image: "https://images.pexels.com/photos/443383/pexels-photo-443383.jpeg",
     date: "September 4, 2023",
@@ -37,16 +37,21 @@ function HomeMainSection() {
     fetchJobs()
   }, [])
 
-  console.log(jobs);
-  return (
-    //1.  Banner
-    //2.  CardList
+  // console.log(jobs);
 
-    <div className='col-span-2  border-2 border-black h-46 w-full'>
+
+  return (
+
+    <div className='col-span-2 md:h-46 w-full h-auto'>
+
+      {/* 1.Banner */}
       <BannerSection image={obj.image} date={obj.date} title={obj.title} desc={obj.desc} />
-      {/* <CardListItem cardData={obj.image} date={cardData.date} company={cardData.company} description={cardData.description}  /> */}
+
+      {/* 2.CardList */}
       <CardListItem cardData={jobs} />
+
     </div>
+
   )
 }
 

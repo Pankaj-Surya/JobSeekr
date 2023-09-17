@@ -37,7 +37,7 @@ const JobDetailPage = ({ data }) => {
             {/* Job ID: {jobid} */}
             <Head> </Head>
             <Navbar />
-            <div className='pt-24 grid grid-cols-3 m-auto  border-2 border-green-400 max-w-screen-xl'>
+            <div className='md:pt-24 pt-20 grid md:grid-cols-3 md:m-auto grid-cols-1 max-w-screen-xl'>
                 <JobMainSideSection obj={singleJob} />
                 <HomeSideSection />
             </div>

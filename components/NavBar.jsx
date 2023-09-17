@@ -51,13 +51,13 @@ const Navbar = ({ darkMode, setDarkMode }) => {
 
     return (
         <div className={`fixed w-full h-16 shadow-xl z-[100] ease-in-out duration-300 bg-[${navBg}] dark:bg-gray-900`}
-            // className={
-            //     shadow
-            //         ? `fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-300 bg-[${navBg}] dark:bg-gray-900`
-            //         : `fixed w-full h-20 z-[100] bg-[${navBg}] dark:bg-gray-900`
-            // }
+        // className={
+        //     shadow
+        //         ? `fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-300 bg-[${navBg}] dark:bg-gray-900`
+        //         : `fixed w-full h-20 z-[100] bg-[${navBg}] dark:bg-gray-900`
+        // }
         >
-            <div className='flex justify-between items-center w-full h-full px-40'>
+            <div className='flex justify-between items-center w-full h-full md:px-40 px-4'>
                 <Link href='/'>
                     {
                         logo ? <Image
@@ -139,20 +139,20 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                         <ul className='uppercase border-b border-gray-300'>
                             <Link href='/'>
                                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                                    Home
+                                Work From Home
                                 </li>
                             </Link>
                             <Link href='/#about'>
                                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                                    About
+                                Internship
                                 </li>
                             </Link>
                             <Link href='/#skills'>
                                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                                    Skills
-                                </li>
+                                Placement Material
+                                </li>   
                             </Link>
-                            <Link href='/#projects'>
+                            {/* <Link href='/#projects'>
                                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
                                     Projects
                                 </li>
@@ -166,7 +166,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                                 <li onClick={() => setNav(false)} className='py-4 text-sm mb-6'>
                                     Contact
                                 </li>
-                            </Link>
+                            </Link> */}
                         </ul>
                         <div className='pt-6 mt-2'>
                             <p className='uppercase tracking-widest text-[#5651e5]'>

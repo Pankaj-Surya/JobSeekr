@@ -10,15 +10,16 @@ import { SocialIcon } from 'react-social-icons';
 function SiteDescSetion() {
     return (
         <div>
-            <div className='flex border-2 border-zinc-300 flex-col items-center mb-8'>
-                <Image className='object-fit rounded-xl' src={SiteImg} width={150} height={150} alt='aa' />
-                <h2 className='mt-2'>JobSeekr</h2>
-                <hr className='h-px my-4 bg-gray-200 border-0' />
-                <p className='mt-2'>Placement | Internship | Study Material</p>
-                <p className='px-6 mt-2 justify-evenly text-md font-medium'>We are here with the motive to provide all the placement and internship opportunities.</p>
+            <div className='flex flex-col items-center md:mb-8'>
+                <Image className='object-fit md:rounded-xl md:w-150 md:h-150  rounded-full mt-2' src={SiteImg} width={150} height={150} alt='aa' />
+                <h2 className='mt-2 md:text-xl text-base'>JobSeekr</h2>
+                <hr className='h-px bg-gray-200 border-0' />
+                <p className='md:mt-2 mt-1 md:text-lg text-sm'>Placement | Internship | Study Material</p>
+                <p className='px-6 md:mt-2 mt-1 justify-evenly md:text-lg text-sm md:font-medium font-medium text-center'>We are here with the motive to provide all the placement and internship opportunities.</p>
 
 
-                <h2 className='mt-6'>Subscribe & Follow</h2>
+                <hr className="w-2/3 h-0.5 mx-auto my-4 bg-gray-900 border-0 rounded md:mt-6" />
+                <h2 className='md:mt-2 mt-4 md:text-2xl text-lg'>Subscribe & Follow</h2>
 
                 <div className='flex items-center justify-center max-w-[330px] m-auto py-4'>
 
